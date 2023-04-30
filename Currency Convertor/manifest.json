@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Currency Convertor",
+  "description": "Converts currency from USD to INR and vice versa",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": "images/cash.png"
+  }
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" class="rounded">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Convertor</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(../images/bg.jpg);
+            background-size: cover;
+        }
+        .bg {
+            background: rgba( 255, 255, 255, 0.3 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 17.5px );
+            -webkit-backdrop-filter: blur( 17.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+        .line {
+            border-bottom: 2px solid #fff;
+            display: block;
+        }
+        .l1 {
+            width: 100px;
+        }
+        .l2 {
+            width: 60px;
+        }
+        .l3 {
+            width: 20px;
+        }
+    </style>
+  </head>
+  <body style="min-width: 600px;min-height: 200px;">
+    
+    <div class="container text-white bg my-5">
+        <div class="row mt-4 mb-4 justify-content-center">
+            <img src="../images/cash.png" class="logo mb-1" align="center" alt="logo">
+            <h1 class="text-center">Currency Convertor</h1>
+            <div style="display: block;" align="center">
+                <div class="line l1 pt-2" align="center"></div>
+                <div class="line l2 pt-2" align="center"></div>
+                <div class="line l3 pt-2" align="center"></div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-4">
+                <label for="amount" class="form-label">Amount</label>
+                <input type="number" class="form-control" id="amount">
+            </div>
+            <div class="col-4">
+                <label for="currency" class="form-label">Currency</label>
+                <select class="form-select" id="currency">
+                    <option selected value="1">USD To INR</option>
+                    <option value="2">INR To USD</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <label for="result" class="form-label">Result</label>
+                <input type="text" class="form-control" id="result" disabled>
+            </div>
+        </div>
+        <div class="row">
+            <p id="rate" class="text-center"></p>
+        </div>
+
+    </div>
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
