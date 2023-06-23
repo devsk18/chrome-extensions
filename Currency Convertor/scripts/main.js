@@ -98,3 +98,12 @@ function getCookie(cname) {
 window.onload = function() {
   GetData();
 }
+
+amountInput.onkeydown = function(key) {
+	var keycode = (key.which) ? key.which : key.keyCode;
+
+	if (keycode == 189)
+		return false;
+	else
+		return true;
+}
