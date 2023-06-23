@@ -7,8 +7,10 @@ resultData = document.getElementById('result');
 rate = document.getElementById('rate');
 resultData.value = '';
 
+var API_KEY = config.API_KEY;
+
 var myHeaders = new Headers();
-myHeaders.append("apikey", "R5QOpL3jE9K7UDcJ80ELgywNC0SYNj4S");
+myHeaders.append("apikey", API_KEY);
 
 var requestOptions = {
     method: 'GET',
